@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active">Easy Buy</a>
+    <a href="http://127.0.0.1:8081/register">Register</a>
+    <a href="http://127.0.0.1:8081/sell_a_house">Sell</a>
+    <a href="http://127.0.0.1:8081/search"> Search user</a>
+  </div>
+
+  <form action="http://127.0.0.1:8081/user_details" method="get">
+    <!-- Next page that has to be performed is Given in Form action !-->
+    <div class="box">
+      <header className="App-header">
+        <h1 className="App-title"> Registration Form </h1><br>
+      </header>
+      <form>
+        <div class="form-group">
+          <label for="user_name">Name:</label>
+          <input type="text" class="form-control" name="user_name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email: </label>
+          <input type="email" class="form-control" name="user_email" placeholder="Enter email" required>
+          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" name="password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+          <label for="user_mobile">Mobile:</label>
+          <input type="text" class="form-control" name="user_mobile" placeholder="Enter your mobile number" required>
+        </div>
+        <div class="form-group">
+          <label for="user_address">Address:</label>
+          <textarea class="form-control" name="user_address" rows="3" placeholder="Enter your address" required></textarea>
+        </div>
+          <input type="checkbox" name="terms" required> I agree to the <a href="# ">Terms & Conditions</a><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </form><br>
+  </div>
+</body>
+
+
+</html>

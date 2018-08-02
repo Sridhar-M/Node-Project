@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active">Easy Buy</a>
+    <a href="http://127.0.0.1:8081/register">Register</a>
+    <a href="http://127.0.0.1:8081/sell_a_house">Sell</a>
+    <a href="http://127.0.0.1:8081/search"> Search user</a>
+  </div>
+
+  <div class="container">
+    <div class="box">
+    <div class="row">
+      <div class="col-sm-6">
+        <form action="http://127.0.0.1:8081/proc_post" class="hello" method="post">
+          <header className="App-header">
+            <h1 className="App-title"> Search User</h1>
+          </header>
+          <label class="text">
+                <p>Customer_Name:
+                   <input type="text" name="user_name" placeholder="Search User"></p>
+                <p>Mobile_Number:
+                   <input type="text" name="user_mobile" placeholder="Your Mobile number" /></p>
+                <p>Email:
+                   <input type="text" name="user_email" placeholder="Your Address..." /></p>
+                <p>Address:
+                   <input type="text" name="user_address" placeholder="Your Address..." /></p>
+            </label><br>
+          <input type="submit" value="Submit" style="font-size: 16px;" /> <br>
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <form action="http://127.0.0.1:8081/sell_post" class="hello" method="post">
+          <header className="App-header">
+            <h1 className="App-title"> Search Seller</h1>
+          </header>
+          <label class="text">
+                <p>Seller_Name:
+                   <input type="text" name="owner_name" placeholder="Search User"></p>
+                <p>Mobile_Number:
+                   <input type="number" name="owner_mobile" placeholder="Your Mobile number"/></p>
+                <p>Email:
+                   <input type="text" name="owner_email" placeholder="Your Address..." /></p>
+                <p>Address:
+                   <input type="text" name="house_address" placeholder="Your Address..." /></p>
+                   <p>House_area:
+                      <input type="text" name="house_area" placeholder="Your Address..."  pattern="[0-9]"/></p>
+            </label><br>
+          <input type="submit" value="Submit" style="font-size: 16px;" /> <br>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
+  </nav>
+</body>
+
+</html>

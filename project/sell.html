@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active">Easy Buy</a>
+    <a href="http://127.0.0.1:8081/register">Register</a>
+    <a href="http://127.0.0.1:8081/sell_a_house">Sell</a>
+    <a href="http://127.0.0.1:8081/search"> Search user</a>
+  </div>
+
+  <form action="http://127.0.0.1:8081/seller_details" method="get">
+    <!-- Next page that has to be performed is Given in Form action !-->
+    <div class="box">
+      <header className="App-header">
+        <h1 className="App-title"> Seller Form </h1>
+      </header>
+      <form>
+
+        <div class="form-group">
+          <label for="owner_name">Owner_Name:</label>
+          <input type="text" class="form-control" name="owner_name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email: </label>
+          <input type="owner_email" class="form-control" name="owner_email" placeholder="Enter email" required>
+          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="owner_password">Password:</label>
+          <input type="password" class="form-control" name="owner_password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+          <label for="owner_mobile">Mobile:</label>
+          <input type="number" class="form-control" name="owner_mobile" placeholder="Enter your mobile number" required>
+        </div>
+        <div class="form-group">
+          <label for="house_address">Address:</label>
+          <textarea class="form-control" name="house_address" rows="3" placeholder="Enter your address" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="house_area">House_area:</label>
+          <input type="number" class="form-control" name="house_area" placeholder="Enter in acres" required>
+            </div>
+            <input type="checkbox" name="terms" required> I agree to the <a href="# ">Terms & Conditions</a><br>
+            <button type="submit " class="btn btn-primary ">Submit</button>
+          </form>
+  </form><br>
+
+  </div>
+</body>
+
+</html>

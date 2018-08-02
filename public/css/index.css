@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background-image: url("/images/home.jpg");
+
+}
+
+.form-group{
+  text-align: left;
+  width: 526px;
+  margin-left: 220px;
+}
+
+h1 {
+  padding-top: 25px;
+}
+
+p {
+
+  font-size: 1.02em;
+}
+
+/* Box */
+
+.box {
+  margin-bottom: 200px;
+  position: relative;
+  text-align: center;
+  border-radius: 30px;
+  width: 1000px;
+  margin: 60px auto;
+  background-color: white;
+  padding-bottom: 25px;
+}
+
+/* Navigation */
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: White;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: green;
+  color: white;
+}
